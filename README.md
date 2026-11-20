@@ -47,27 +47,35 @@ your edit:
 node scripts/validate.mjs
 ```
 
-### Trace a building footprint
+### Correct a location or trace a footprint
 
 Until a project has `shapes`, the 3D view draws a plain square box at its
-location and says so in the popup. To replace the box with the real footprint:
+location and says so in the popup. The site has a built-in edit mode for fixing
+both the location and the shape. Open the map with `?edit=1` on the address:
 
-1. Find the site plan (city staff report, design review packet, or Regents item).
-2. Open https://geojson.io, zoom to the site, and draw the outline with the
-   polygon tool, using the aerial imagery as a guide.
-3. In the JSON panel, copy the list of `[longitude, latitude]` points from
-   `coordinates` (the inner list, without the outermost pair of brackets).
-4. Paste it into the project as a ring:
+    https://YOUR-PAGES-URL/?edit=1
 
-```json
-"shapes": [
-  { "ring": [[-122.2655, 37.8679], [-122.2649, 37.8680], [-122.2648, 37.8674], [-122.2654, 37.8673]] }
-]
-```
+Edit mode shows an aerial photo under the map and changes nothing online; all
+edits stay in your browser until you download them.
 
-A building with a tower on a podium can use several blocks, each with its own
-height. A block without `stories` or `height_ft` takes the project's height.
-`base_ft` lifts a block off the ground, for a tower that starts above its podium.
+- **Move a pin:** drag it to the right spot.
+- **Trace a footprint:** pick the project in the list, press *Trace footprint*,
+  click each corner of the building in order, then *Finish block* and enter its
+  storeys (or leave blank to use the project's height). Trace again to add
+  another block, such as a tower on top of a podium.
+- **Start over:** *Remove footprint* returns the project to a placeholder box.
+- **Check it:** the 3D button shows the result at height.
+- **Save:** *Download projects.json*, then replace `data/projects.json` in the
+  repository with the downloaded file (on GitHub: open the `data` folder, then
+  Add file → Upload files) and commit.
+
+For sites that are still a parking lot or an older building in the aerial
+photo, trace the outline from the project's site plan (city staff report,
+design review packet, or Regents item) using the lot lines as a guide.
+
+The saved format, if you prefer to edit by hand: each block is a ring of
+`[longitude, latitude]` points with an optional `stories` or `height_ft`, and
+`base_ft` to lift a block off the ground.
 
 ```json
 "shapes": [

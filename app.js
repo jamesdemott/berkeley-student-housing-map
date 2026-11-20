@@ -32,6 +32,9 @@
   var map = null;
   var popup = null;
 
+  // Shared with edit.js, which is only loaded when the address has ?edit=1.
+  var api = { tracing: false };
+
   var params = new URLSearchParams(location.search);
   if (params.get("embed") === "1") document.body.classList.add("embed");
 
@@ -296,6 +299,7 @@
   function select(id, opts) {
     var p = projects.find(function (x) { return x.id === id; });
     if (!p) return;
+    if (api.tracing) return; // edit mode: clicks are placing footprint points
     if (!matches(p)) {
       // Deep link to a filtered-out project: reset filters rather than show nothing.
       state.owner = "all"; state.query = ""; el.search.value = "";
@@ -395,6 +399,17 @@
         setMode(params.get("view") !== "2d", false);
         render();
         if (location.hash.length > 1) select(decodeURIComponent(location.hash.slice(1)), { scroll: true });
+
+        if (params.get("edit") === "1") {
+          api.map = map; api.data = data; api.projects = projects; api.markers = markers;
+          api.setMode = setMode;
+          api.selected = function () { return projects.find(function (x) { return x.id === state.selected; }); };
+          api.refresh = function () { map.getSource("projects").setData(shapeFeatures()); };
+          var s = document.createElement("script");
+          s.src = "edit.js";
+          s.onload = function () { window.initHousingEdit(api); };
+          document.body.appendChild(s);
+        }
       });
       render();
     })
