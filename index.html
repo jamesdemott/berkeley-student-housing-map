@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Berkeley Student Housing Map</title>
   <meta name="description" content="A map of proposed, under-construction, and newly opened student housing on and near the UC Berkeley campus — university and private.">
-  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="vendor/maplibre/maplibre-gl.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,13 +30,13 @@
 
     <footer>
       <span id="updated"></span>
-      <span>Locations are approximate. <a id="feedback" href="#">Suggest a correction</a></span>
+      <span>Locations and 3D shapes are approximate. <a id="feedback" href="#">Suggest a correction</a></span>
     </footer>
   </aside>
 
   <main id="map" aria-label="Map of housing projects"></main>
 
-  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/maplibre/maplibre-gl.js"></script>
   <script src="config.js"></script>
   <script src="app.js"></script>
 </body>

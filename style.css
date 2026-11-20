@@ -96,9 +96,18 @@ a { color: var(--accent); }
 .st-construction { background: var(--construction); }
 .st-opened { background: var(--opened); }
 
+/* Pins on the map: shown on the flat map, hidden in 3D where the blocks take over. */
+.map-pin { padding: 0; cursor: pointer; }
+.map-pin[hidden], body.mode-3d .map-pin { display: none; }
+#mode-toggle { font-weight: 700; font-size: 12px; }
+
 /* Popup */
-.leaflet-popup-content-wrapper { border-radius: 10px; }
-.leaflet-popup-content { margin: 14px 16px; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); }
+.maplibregl-popup-content {
+  border-radius: 10px; padding: 14px 16px; box-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
+  font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink);
+}
+.pop { max-height: min(60vh, 420px); overflow-y: auto; }
+.maplibregl-popup-close-button { font-size: 18px; padding: 2px 8px; color: var(--muted); }
 .pop h2 { margin: 8px 0 2px; font-size: 16px; line-height: 1.25; }
 .pop p { margin: 0 0 6px; }
 .pop .addr { color: var(--muted); font-size: 13px; }
@@ -107,6 +116,7 @@ a { color: var(--accent); }
 .pop dt { color: var(--muted); }
 .pop dd { margin: 0; }
 .pop .notes { font-size: 13px; }
+.pop .caveat { font-size: 12px; color: var(--muted); font-style: italic; }
 .pop .sources { font-size: 12px; color: var(--muted); margin: 8px 0 0; }
 .tags { display: flex; gap: 6px; }
 .tag { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; color: #fff; text-transform: uppercase; letter-spacing: 0.04em; }

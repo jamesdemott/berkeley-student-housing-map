@@ -21,8 +21,24 @@ for (const p of data.projects) {
   // Rough box around Berkeley / Albany, to catch swapped or mistyped coordinates.
   if (!(p.lat > 37.84 && p.lat < 37.9)) errors.push(`${at} lat ${p.lat} is outside the Berkeley area`);
   if (!(p.lng > -122.33 && p.lng < -122.23)) errors.push(`${at} lng ${p.lng} is outside the Berkeley area`);
-  for (const k of ["beds", "units", "stories"]) {
+  for (const k of ["beds", "units", "stories", "height_ft"]) {
     if (p[k] != null && !(Number.isInteger(p[k]) && p[k] > 0)) errors.push(`${at} ${k} must be a positive whole number or null`);
+  }
+  // Optional traced footprint: one or more blocks, each a ring of [lng, lat] points.
+  if (p.shapes != null) {
+    if (!Array.isArray(p.shapes) || p.shapes.length === 0) errors.push(`${at} shapes must be null or a non-empty list`);
+    for (const s of p.shapes || []) {
+      if (!Array.isArray(s.ring) || s.ring.length < 3) { errors.push(`${at} each shape needs a ring of at least 3 points`); continue; }
+      for (const pt of s.ring) {
+        if (!(Array.isArray(pt) && pt[0] < -122.23 && pt[0] > -122.33 && pt[1] > 37.84 && pt[1] < 37.9)) {
+          errors.push(`${at} ring point ${JSON.stringify(pt)} should be [lng, lat] near Berkeley`);
+          break;
+        }
+      }
+      for (const k of ["stories", "height_ft", "base_ft"]) {
+        if (s[k] != null && !(typeof s[k] === "number" && s[k] > 0)) errors.push(`${at} shape ${k} must be a positive number`);
+      }
+    }
   }
   if (!Array.isArray(p.sources) || p.sources.length === 0) errors.push(`${at} needs at least one source`);
   for (const s of p.sources || []) {
