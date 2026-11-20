@@ -199,6 +199,11 @@
 
   // ---- popup, list, filters ----
 
+  // Opens Google Maps Street View at the nearest panorama. A plain link, so no API key.
+  function streetViewUrl(p) {
+    return "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=" + p.lat + "," + p.lng;
+  }
+
   function popupHtml(p) {
     var rows = [];
     if (p.opens) rows.push(["Timing", p.opens]);
@@ -210,7 +215,8 @@
       '<div class="tags"><span class="tag st-' + p.status + '">' + STATUS_LABEL[p.status] + "</span>" +
       '<span class="tag plain">' + OWNER_LABEL[p.owner] + "</span></div>" +
       "<h2>" + esc(p.name) + "</h2>" +
-      '<p class="addr">' + esc(p.address) + "</p>" +
+      '<p class="addr">' + esc(p.address) + ' · <a href="' + streetViewUrl(p) +
+        '" target="_blank" rel="noopener">Street View<span aria-hidden="true"> ↗</span></a></p>' +
       (sizeText(p) ? '<p class="size">' + sizeText(p) + "</p>" : "") +
       (rows.length
         ? "<dl>" + rows.map(function (r) { return "<dt>" + r[0] + "</dt><dd>" + esc(r[1]) + "</dd>"; }).join("") + "</dl>"
