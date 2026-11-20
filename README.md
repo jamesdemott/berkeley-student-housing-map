@@ -69,10 +69,18 @@ Link straight to a project with its id: `https://YOUR-PAGES-URL/#heumann-house`.
 
 ## Settings
 
-`config.js` holds the starting map view, the basemap tile URL, and where the
-"Suggest a correction" link points.
+`config.js` holds the starting map view, the basemap, and where the "Suggest a
+correction" link points.
+
+### Basemap key
+
+The light CARTO basemap needs a free Basemaps API key. Request one at
+https://carto.com/basemaps/apikey and paste it into `cartoKey` in `config.js`.
+The browser sends this key with every tile request, so it is public by design
+and safe to commit; it is not a secret. Until a key is set, the map uses
+standard OpenStreetMap tiles.
 
 ## Credits
 
 Map library: [Leaflet](https://leafletjs.com) (BSD-2-Clause). Basemap: CARTO
-Positron, with data © OpenStreetMap contributors.
+Positron or OpenStreetMap tiles, with data © OpenStreetMap contributors.

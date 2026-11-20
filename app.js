@@ -21,7 +21,13 @@
 
   var map = L.map("map", { zoomControl: false, scrollWheelZoom: true }).setView(CONFIG.center, CONFIG.zoom);
   L.control.zoom({ position: "topright" }).addTo(map);
-  L.tileLayer(CONFIG.tiles, { attribution: CONFIG.tileAttribution, maxZoom: 19, subdomains: "abcd" }).addTo(map);
+  if (CONFIG.cartoKey) {
+    L.tileLayer(CONFIG.cartoTiles + "?key=" + encodeURIComponent(CONFIG.cartoKey), {
+      attribution: CONFIG.cartoAttribution, maxZoom: 19, subdomains: "abcd"
+    }).addTo(map);
+  } else {
+    L.tileLayer(CONFIG.fallbackTiles, { attribution: CONFIG.fallbackAttribution, maxZoom: 19 }).addTo(map);
+  }
 
   var el = {
     list: document.getElementById("list"),
