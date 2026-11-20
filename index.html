@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berkeley Student Housing Map</title>
+  <meta name="description" content="A map of proposed, under-construction, and newly opened student housing on and near the UC Berkeley campus — university and private.">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside id="panel">
+    <header id="intro">
+      <h1>Berkeley Student Housing Map</h1>
+      <p>New homes for students on and near campus: what's proposed, what's being built, and what just opened.</p>
+    </header>
+
+    <div id="controls">
+      <div class="seg" id="owner-filter" role="group" aria-label="Who is building">
+        <button data-owner="all" aria-pressed="true">All</button>
+        <button data-owner="university" aria-pressed="false"><span class="shape circle"></span>University</button>
+        <button data-owner="private" aria-pressed="false"><span class="shape square"></span>Private</button>
+      </div>
+      <div id="status-filter" role="group" aria-label="Status"></div>
+      <input id="search" type="search" placeholder="Search by name or address" aria-label="Search projects">
+      <p id="summary" aria-live="polite"></p>
+    </div>
+
+    <ol id="list"></ol>
+
+    <footer>
+      <span id="updated"></span>
+      <span>Locations are approximate. <a id="feedback" href="#">Suggest a correction</a></span>
+    </footer>
+  </aside>
+
+  <main id="map" aria-label="Map of housing projects"></main>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

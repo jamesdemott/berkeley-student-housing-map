@@ -1,0 +1,306 @@
+{
+  "last_updated": "2026-11-20",
+  "projects": [
+    {
+      "id": "bancroft-fulton",
+      "name": "Bancroft-Fulton Student Housing",
+      "address": "2200 Bancroft Way",
+      "lat": 37.8676, "lng": -122.2652,
+      "owner": "university",
+      "status": "construction",
+      "beds": 1625, "units": null, "stories": 23,
+      "opens": "Fall 2028",
+      "team": "UC Berkeley Capital Strategies; KieranTimberlake (design); Clark Construction",
+      "audience": "First-year undergraduates",
+      "notes": "Approved by the Regents in March 2025; construction began January 2026. At 276 ft it will be the tallest building in Berkeley. Includes a new dining hall. Facade installation under way as of November 2026.",
+      "sources": [
+        { "label": "UC Berkeley Capital Strategies", "url": "https://capitalstrategies.berkeley.edu/Bancroft-Fulton" },
+        { "label": "SF YIMBY, Nov 2026", "url": "https://sfyimby.com/2026/11/facade-installation-starts-at-2200-bancroft-way-berkeley.html" },
+        { "label": "KieranTimberlake", "url": "https://kierantimberlake.com/updates/ucbbancroftfulton-construction/" }
+      ]
+    },
+    {
+      "id": "heumann-house",
+      "name": "Judith Heumann House (People's Park)",
+      "address": "2556 Haste St",
+      "lat": 37.8657, "lng": -122.2573,
+      "owner": "university",
+      "status": "construction",
+      "beds": 1100, "units": null, "stories": null,
+      "opens": "Fall 2027",
+      "team": "UC Berkeley",
+      "audience": "Undergraduates",
+      "notes": "Broke ground July 2024 after the California Supreme Court cleared the project; topped out August 2025; facade in place October 2026.",
+      "sources": [
+        { "label": "Berkeleyside, Oct 2026", "url": "https://www.berkeleyside.org/2026/10/16/peoples-park-student-housing-facade-in-place" },
+        { "label": "Berkeleyside, Aug 2025", "url": "https://www.berkeleyside.org/2025/08/27/peoples-park-construction-update-photos" }
+      ]
+    },
+    {
+      "id": "channing-bowditch",
+      "name": "Channing-Bowditch Student Housing",
+      "address": "Channing Way at Bowditch St (former Anna Head School site)",
+      "lat": 37.8666, "lng": -122.2569,
+      "owner": "university",
+      "status": "proposed",
+      "beds": 2000, "units": null, "stories": 26,
+      "opens": null,
+      "team": "UC Berkeley",
+      "audience": "Undergraduates",
+      "notes": "Up to 2,000 beds with a tower of up to 26 stories (some coverage says 1,500+ beds). In environmental review; could go to the Regents in 2027. Preservationists object to demolishing Channing Hall (1892).",
+      "sources": [
+        { "label": "Berkeleyside, Mar 2026", "url": "https://www.berkeleyside.org/2026/03/23/anna-head-house-uc-berkeley-dorm" },
+        { "label": "CEQAnet", "url": "https://ceqanet.lci.ca.gov/2020040078/16" },
+        { "label": "Berkeley News, Mar 2026", "url": "https://news.berkeley.edu/2026/03/23/uc-berkeley-reaches-major-housing-milestone-for-incoming-new-students/" }
+      ]
+    },
+    {
+      "id": "anchor-house",
+      "name": "Helen Diller Anchor House",
+      "address": "1950 Oxford St",
+      "lat": 37.8725, "lng": -122.2670,
+      "owner": "university",
+      "status": "opened",
+      "beds": 772, "units": null, "stories": 14,
+      "opens": "Opened Fall 2024",
+      "team": "UC Berkeley; Helen Diller Foundation (donor)",
+      "audience": "Transfer students",
+      "notes": "Donor-funded residence for undergraduate transfer students.",
+      "sources": [
+        { "label": "Berkeleyside, Apr 2026", "url": "https://www.berkeleyside.org/2026/04/03/uc-berkeley-offers-freshmen-2-year-housing-guarantee-with-new-dorms" }
+      ]
+    },
+    {
+      "id": "xucyun-ruwway",
+      "name": "xučyun ruwway Apartments",
+      "address": "University Village, Albany",
+      "lat": 37.8857, "lng": -122.2982,
+      "owner": "university",
+      "status": "opened",
+      "beds": 761, "units": null, "stories": null,
+      "opens": "Opened Fall 2024",
+      "team": "UC Berkeley",
+      "audience": "Graduate students",
+      "notes": "Graduate student apartments at University Village, about two miles northwest of campus.",
+      "sources": [
+        { "label": "KQED, 2026", "url": "https://www.kqed.org/news/12078253/uc-berkeley-offers-freshmen-2-year-housing-guarantee-with-new-dorms" }
+      ]
+    },
+    {
+      "id": "valiant",
+      "name": "The Valiant",
+      "address": "2538 Durant Ave",
+      "lat": 37.8677, "lng": -122.2574,
+      "owner": "private",
+      "status": "opened",
+      "beds": 265, "units": 83, "stories": 8,
+      "opens": "Opened August 2026",
+      "team": "Canyon Partners Real Estate, The Martin Group, Valiance Capital; Studio KDA (architect)",
+      "audience": "Student-oriented",
+      "notes": "Five affordable units and ground-floor retail. Market-rate beds were reported 98% leased before the fall 2026 semester.",
+      "sources": [
+        { "label": "SF YIMBY, Aug 2026", "url": "https://sfyimby.com/2026/08/valiant-opens-at-2538-durant-avenue-southside-berkeley.html" },
+        { "label": "Urbanize SF", "url": "https://sf.urbanize.city/post/eight-story-student-housing-complex-opens-near-uc-berkeley-campus" }
+      ]
+    },
+    {
+      "id": "pique",
+      "name": "Pique",
+      "address": "2587 Telegraph Ave",
+      "lat": 37.8636, "lng": -122.2586,
+      "owner": "private",
+      "status": "opened",
+      "beds": 484, "units": 53, "stories": 8,
+      "opens": "Opened 2026",
+      "team": "Gilbane Development",
+      "audience": "Student-oriented",
+      "notes": "Purpose-built student housing on the former Buffalo Exchange site. Topped out July 2025; the developer lists it as completed in 2026.",
+      "sources": [
+        { "label": "Gilbane", "url": "https://www.gilbaneco.com/projects/pique/" },
+        { "label": "SF YIMBY, Jul 2025", "url": "https://sfyimby.com/2025/07/construction-tops-out-at-2587-telegraph-avenue-southside-berkeley.html" }
+      ]
+    },
+    {
+      "id": "the-northside",
+      "name": "The Northside",
+      "address": "1752 Shattuck Ave",
+      "lat": 37.8762, "lng": -122.2690,
+      "owner": "private",
+      "status": "opened",
+      "beds": null, "units": 68, "stories": null,
+      "opens": "Opened 2026",
+      "team": "Panoramic Interests",
+      "audience": "Student-oriented",
+      "notes": "Reported nearly complete with leasing under way in March 2026. Earlier financing coverage listed 73 units. Opening not independently confirmed.",
+      "sources": [
+        { "label": "SF YIMBY, Mar 2026", "url": "https://sfyimby.com/2026/03/housing-nearly-complete-at-1752-shattuck-avenue-north-berkeley.html" },
+        { "label": "Multi-Housing News", "url": "https://www.multihousingnews.com/panoramic-interests-lands-30m-for-student-housing-development/" }
+      ]
+    },
+    {
+      "id": "2425-durant",
+      "name": "2425 Durant Avenue",
+      "address": "2425 Durant Ave",
+      "lat": 37.8679, "lng": -122.2600,
+      "owner": "private",
+      "status": "approved",
+      "beds": null, "units": 169, "stories": 20,
+      "opens": null,
+      "team": "Yes Community Architects",
+      "audience": "Student-oriented",
+      "notes": "Approved by the Zoning Adjustments Board in October 2025. Council rejected a landmark bid for the site in July 2025. Two labor unions appealed the permit; the appeal was on the City Council agenda in February 2026 (outcome not confirmed here).",
+      "sources": [
+        { "label": "SF YIMBY, Oct 2025", "url": "https://sfyimby.com/2025/10/berkeley-approved-20-story-apartment-tower-at-2425-durant-avenue.html" },
+        { "label": "Daily Californian", "url": "https://www.dailycal.org/news/city/housing/labor-unions-appeal-permit-for-proposed-southside-student-housing-development/article_184dfe40-0545-45f8-987a-70cc79daa82b.html" }
+      ]
+    },
+    {
+      "id": "2372-ellsworth",
+      "name": "2372 Ellsworth Street",
+      "address": "2372 Ellsworth St",
+      "lat": 37.8666, "lng": -122.2641,
+      "owner": "private",
+      "status": "approved",
+      "beds": 166, "units": 49, "stories": 7,
+      "opens": null,
+      "team": null,
+      "audience": "Student-oriented",
+      "notes": "Went to the Zoning Adjustments Board in October 2025; $24M in construction financing was later reported. Construction start not confirmed.",
+      "sources": [
+        { "label": "SF YIMBY, Oct 2025", "url": "https://sfyimby.com/2025/10/meeting-tomorrow-for-2372-ellsworth-street-in-southside-berkeley.html" },
+        { "label": "REBusiness", "url": "https://rebusinessonline.com/northmarq-arranges-24m-in-construction-financing-for-student-housing-project-near-uc-berkeley/" }
+      ]
+    },
+    {
+      "id": "2298-durant",
+      "name": "2298 Durant Avenue",
+      "address": "2298 Durant Ave",
+      "lat": 37.8672, "lng": -122.2641,
+      "owner": "private",
+      "status": "proposed",
+      "beds": null, "units": 45, "stories": 7,
+      "opens": null,
+      "team": null,
+      "audience": "General / student-oriented",
+      "notes": "Scaled back in March 2026 from eight stories and 65 units. Two units deed-restricted for very-low-income households. Zoning Adjustments Board review was scheduled for August 2026.",
+      "sources": [
+        { "label": "SF YIMBY, Mar 2026", "url": "https://sfyimby.com/2026/03/plans-decrease-for-2298-durant-avenue-in-southside-berkeley.html" }
+      ]
+    },
+    {
+      "id": "amoeba-apartments",
+      "name": "Amoeba Apartments",
+      "address": "2455 Telegraph Ave",
+      "lat": 37.8661, "lng": -122.2586,
+      "owner": "private",
+      "status": "proposed",
+      "beds": null, "units": 68, "stories": 8,
+      "opens": null,
+      "team": null,
+      "audience": "Student-oriented",
+      "notes": "Apartments above the Amoeba Music store, keeping the existing facade and mural. Zoning Adjustments Board review was scheduled for September 2026.",
+      "sources": [
+        { "label": "SF YIMBY, Sep 2026", "url": "https://sfyimby.com/2026/09/meeting-tonight-for-amoeba-apartments-in-southside-berkeley.html" }
+      ]
+    },
+    {
+      "id": "2727-haste",
+      "name": "2727 Haste Street",
+      "address": "2727 Haste St",
+      "lat": 37.8667, "lng": -122.2531,
+      "owner": "private",
+      "status": "proposed",
+      "beds": 154, "units": 45, "stories": 6,
+      "opens": null,
+      "team": null,
+      "audience": "Student-oriented",
+      "notes": "Pre-application filed September 2025 for a site between College and Piedmont avenues.",
+      "sources": [
+        { "label": "SF YIMBY, Sep 2025", "url": "https://sfyimby.com/2025/09/pre-application-for-2727-haste-street-in-southside-berkeley.html" }
+      ]
+    },
+    {
+      "id": "2128-oxford",
+      "name": "2128 Oxford Street",
+      "address": "2128 Oxford St",
+      "lat": 37.8704, "lng": -122.2664,
+      "owner": "private",
+      "status": "approved",
+      "beds": null, "units": 456, "stories": 26,
+      "opens": null,
+      "team": "Core Spaces; DLR Group (architect)",
+      "audience": "Student-oriented",
+      "notes": "284-ft student housing tower across Oxford Street from campus. Back at design review in April 2026; no construction start reported.",
+      "sources": [
+        { "label": "SF YIMBY, Apr 2026", "url": "https://sfyimby.com/2026/04/meeting-tomorrow-for-2128-oxford-street-in-downtown-berkeley.html" },
+        { "label": "CTBUH", "url": "https://www.ctbuh.org/news/berkeley-approves-28-story-building-that-adds-almost-600-residences-to-the-area" }
+      ]
+    },
+    {
+      "id": "2029-university",
+      "name": "2029 University Avenue",
+      "address": "2029 University Ave",
+      "lat": 37.8722, "lng": -122.2697,
+      "owner": "private",
+      "status": "approved",
+      "beds": null, "units": 160, "stories": 23,
+      "opens": null,
+      "team": "Laconia Development",
+      "audience": "Student-oriented",
+      "notes": "Student-housing version has 160 units (many four-bedrooms), 24 affordable; an alternative scheme had 240 apartments. A Zoning Adjustments Board approval was appealed to the City Council in February 2026, with staff recommending the appeal be denied (outcome not confirmed here).",
+      "sources": [
+        { "label": "SF YIMBY, Jan 2025", "url": "https://sfyimby.com/2025/01/renderings-revealed-for-23-story-tower-at-2029-university-avenue-berkeley.html" },
+        { "label": "City Council agenda, Feb 2026", "url": "https://berkeleyca.gov/city-council-special-meeting-eagenda-february-23-2026" }
+      ]
+    },
+    {
+      "id": "1998-shattuck",
+      "name": "1998 Shattuck Avenue",
+      "address": "1950–1998 Shattuck Ave",
+      "lat": 37.8723, "lng": -122.2686,
+      "owner": "private",
+      "status": "approved",
+      "beds": null, "units": 599, "stories": 28,
+      "opens": null,
+      "team": null,
+      "audience": "General market",
+      "notes": "312-ft tower approved unanimously by the City Council in June 2025; 58 units for very-low-income renters. The developer has said groundbreaking is two to three years out.",
+      "sources": [
+        { "label": "Berkeleyside, Jun 2025", "url": "https://www.berkeleyside.org/2025/06/04/berkeley-housing-high-rise-shattuck-university" },
+        { "label": "Berkeleyside, Jan 2026", "url": "https://www.berkeleyside.org/2026/01/22/uc-berkeleys-tallest-ever-dorm-will-soon-begin-to-rise" }
+      ]
+    },
+    {
+      "id": "2190-shattuck",
+      "name": "2190 Shattuck Avenue",
+      "address": "2190 Shattuck Ave",
+      "lat": 37.8692, "lng": -122.2686,
+      "owner": "private",
+      "status": "proposed",
+      "beds": null, "units": 452, "stories": 34,
+      "opens": null,
+      "team": null,
+      "audience": "General market",
+      "notes": "Modified plans filed in November 2025 would raise a previously approved 25-story tower to 34 floors, potentially the tallest in the city.",
+      "sources": [
+        { "label": "SF YIMBY, Nov 2025", "url": "https://sfyimby.com/2025/11/modified-plans-could-be-potential-tallest-tower-in-berkeley.html" }
+      ]
+    },
+    {
+      "id": "2276-shattuck",
+      "name": "2276 Shattuck Avenue",
+      "address": "2276 Shattuck Ave",
+      "lat": 37.8676, "lng": -122.2686,
+      "owner": "private",
+      "status": "proposed",
+      "beds": null, "units": 134, "stories": null,
+      "opens": null,
+      "team": null,
+      "audience": "General / student-oriented",
+      "notes": "Roughly 205-ft tower; 72 of the 134 apartments are three-bedrooms. Public meeting held March 2026.",
+      "sources": [
+        { "label": "SF YIMBY, Mar 2026", "url": "https://sfyimby.com/2026/03/meeting-tonight-for-2276-shattuck-avenue-in-downtown-berkeley.html" }
+      ]
+    }
+  ]
+}
