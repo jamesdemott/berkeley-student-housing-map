@@ -11,7 +11,7 @@ window.MAP_CONFIG = {
   // (request one at https://carto.com/basemaps/apikey). The key is used by the
   // browser, so it is public by design: it is fine to commit it here.
   // While cartoKey is empty the map falls back to standard OpenStreetMap tiles.
-  cartoKey: "",
+  cartoKey: "cb1_5csg_1_7fe4f10c3d7557b93b737653",
   cartoTiles: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
   cartoAttribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
